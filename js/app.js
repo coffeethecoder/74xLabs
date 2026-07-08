@@ -1,9 +1,9 @@
 /* js/app.js — Main Application Entry Point */
 
-import { ICS }                              from './data/ics.js';
+import { ICS } from './data/ics.js';
 import { renderLibrary, bindLibraryEvents } from './components/library.js';
 import { renderSimulator, bindSimulatorEvents } from './components/simulator.js';
-import { renderProblems, bindProblemsEvents }   from './components/problems.js';
+import { renderProblems, bindProblemsEvents } from './components/problems.js';
 
 /* ══════════════════════════════════════════════════════════
    GLOBAL APPLICATION STATE
@@ -14,19 +14,19 @@ const state = {
   activeTab: 'library',
 
   /* library */
-  search:     '',
-  category:   'All',
+  search: '',
+  category: 'All',
   selectedIC: null,
 
   /* simulator */
-  simICId:    '7408',
+  simICId: '7408',
   activeGate: 0,
-  pinStates:  {},
+  pinStates: {},
 
   /* problems */
-  activeProbId:  null,
-  probInputs:    [],
-  showSolution:  false
+  activeProbId: null,
+  probInputs: [],
+  showSolution: false
 };
 
 /* ══════════════════════════════════════════════════════════
